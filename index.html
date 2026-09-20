@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 TO 8TH CONSOLIDATED MARKS REGISTER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="portal-header">
+        <div class="header-container">
+            <div class="header-inputs">
+                <div class="header-row full-width">
+                    <label for="schoolName"><strong>GOVERNMENT LOWER/HIGHER PRIMARY SCHOOL:</strong></label>
+                    <input type="text" id="schoolName" placeholder="Enter School Name..." value="GOVERNMENT HIGHER PRIMARY SCHOOL">
+                </div>
+                
+                <div class="header-row split">
+                    <div class="input-group">
+                        <label for="talukName"><strong>TALUK:</strong></label>
+                        <input type="text" id="talukName" placeholder="Enter Taluk..." value="TALUK NAME">
+                    </div>
+                    <div class="input-group">
+                        <label for="districtName"><strong>DISTRICT:</strong></label>
+                        <input type="text" id="districtName" placeholder="Enter District..." value="DISTRICT NAME">
+                    </div>
+                    <div class="input-group class-group">
+                        <label for="className"><strong>CLASS:</strong></label>
+                        <input type="text" id="className" placeholder="Class..." value="6TH">
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-title-box">
+                <h2>6 TO 8TH CONSOLIDATED MARKS REGISTER - 2026-27</h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+
+        <!-- Action Toolbar -->
+        <div class="control-panel no-print">
+            <div class="button-group">
+                <button class="btn btn-save" onclick="saveData()">💾 Save Data</button>
+                <button class="btn btn-add" onclick="addNewStudent()">➕ Add Student Row</button>
+                <button class="btn btn-print" onclick="window.print()">🖨️ Print A3 Landscape</button>
+            </div>
+        </div>
+
+        <!-- Marks Register Table -->
+        <div class="table-wrapper">
+            <table id="registerTable">
+                <thead>
+                    <tr class="main-header-row">
+                        <th rowspan="2">S NO</th>
+                        <th rowspan="2">STUDENT NAME</th>
+                        <th rowspan="2">NO OF DAYS PRESENT</th>
+                        <th rowspan="2">TOTAL SCHOOL DAYS</th>
+                        <th rowspan="2">SEMESTER</th>
+                        <th rowspan="2">EXAMS</th>
+                        <th rowspan="2">PERCENTAGE</th>
+                        <th colspan="2">KANNADA</th>
+                        <th colspan="2">ENGLISH</th>
+                        <th colspan="2">HINDI</th>
+                        <th colspan="2">MATHS</th>
+                        <th colspan="2">SCIENCE</th>
+                        <th colspan="2">SOCIAL SCIENCE</th>
+                        <th colspan="3">TOTAL</th>
+                        <th colspan="5" class="cocurricular-header">CO-CURRICULAR ACTIVITIES GRADE</th>
+                        <th rowspan="2">RESULT</th>
+                    </tr>
+                    <tr class="sub-header-row">
+                        <th>MARKS</th><th>GRADE</th>
+                        <th>MARKS</th><th>GRADE</th>
+                        <th>MARKS</th><th>GRADE</th>
+                        <th>MARKS</th><th>GRADE</th>
+                        <th>MARKS</th><th>GRADE</th>
+                        <th>MARKS</th><th>GRADE</th>
+                        <th>MARKS</th><th>PERCENTAGE</th><th>GRADE</th>
+                        <th>PHYSICAL HEALTH</th>
+                        <th>ARTS & CRAFTS</th>
+                        <th>DANCE & MUSIC</th>
+                        <th>SUPW</th>
+                        <th>VALUE EDUCATION</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTableBody">
+                    <!-- Dynamic Student Rows Render Here -->
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <!-- Footer Attribution -->
+    <footer class="portal-footer">
+        <div class="footer-content">
+            <p class="designer">Designed by : LAKSHMIKANTH R (Mob: 9844444871)</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
